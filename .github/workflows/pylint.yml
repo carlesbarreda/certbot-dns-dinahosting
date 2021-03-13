@@ -1,9 +1,13 @@
 name: Pylint
 
 on:
-  push:
+  push: 
+    branches:
+      [pylint]
 
   workflow_dispatch:
+    branches:
+      [pylint]
 
 jobs:
   build:
